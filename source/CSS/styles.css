@@ -429,3 +429,51 @@ img {
     }
 }
 
+.feature-item__img {
+    display:block;
+    width:100%
+}
+
+.feature-item__footer {
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    position:relative
+}
+
+.feature-item__title {
+    margin:0;
+    background:#4db5ff;
+    width:100%;
+    padding:.8em;
+    font-size:0.9em;
+    color:#fff
+}
+
+.feature-item__icon {
+    width:4rem;
+    height:3.46rem;
+    background:rgba(0,0,0,0.6) url(../../public/img/Blue-Beetle-Profile.svg) center/3rem no-repeat;
+    position:absolute;
+    left:65%;
+    bottom:0;
+    -webkit-clip-path:polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    clip-path:polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
+}
+
+@media screen and (min-width:640px) {
+    .section-data__inner {
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+        -webkit-box-pack:justify;
+        -webkit-justify-content:space-between;
+        -ms-flex-pack:justify;
+        justify-content:space-between
+    }
+}
