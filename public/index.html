@@ -4,25 +4,75 @@
 	<meta charset="UTF-8">
 	<title>volkswagen</title>
 	<link rel="stylesheet" href="../source/CSS/normalize.css">
-	<link rel="stylesheet" href="../source/CSS/header-footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="https://file.myfontastic.com/Ju4tYXsA6McXvVP5ZJsxNi/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="../source/CSS/styles.css">
 	<script src="../source/js/modernizr-custom.js"></script>
 </head>
 <body>
-	<header>			
-		<div class="contenedor-img-header">
-			<img src="https://fortunedotcom.files.wordpress.com/2016/04/489943546.jpg" class="img-header">
+	<!--header-->
+	<header class="main-header main-container">			
+		<div class="main-header-1">
+			<img src="img/home/menu/Logo_Volkswagen.png" class="logo">
 		</div>
-		<div class="nav-cont">
-			<nav class="nav">
-				<ul class="menu">
-					<li class="menu_item_prin"><a href="index.html" class="menu_link_princ">Inicio</a></li>
-					<li class="menu_item_prin"><a href="autos.html" class="menu_link_princ">Autos</a></li>
-					<li class="menu_item_prin"><a href="contactanos.html" class="menu_link_princ">Estoy interesado</a></li>
-					<li class="menu_item_prin"><a href="mapa.html" class="menu_link_princ">Ubicanos</a></li>
-				</ul>
-			</nav>
-		</div>
+		<div class="main-header-2">
+	      	<!--Widget de llamada-->
+	    	<div class="contact-widget">
+		        <!--Icono-->
+		        <div class="contact-widget__icon icon-call button button--dark button--square"></div>
+		        <!--Datos-->
+		        <div class="contact-widget__data">
+		          <h3 class="contact-widget__title">Contactanos</h3>
+		          <p class="contact-widget__content">000-111-222</p>
+		        </div>
+	    	</div>
+	      	<!--Widget de direccion-->
+      		<div class="contact-widget">
+          		<!--Icono-->
+        		<div class="contact-widget__icon icon-location button button--dark button--square"></div>
+        		<!--Datos-->
+        		<div class="contact-widget__data">
+          			<h3 class="contact-widget__title">Nuestra localizacion</h3>
+          			<p class="contact-widget__content">Colima por ahi en algun lugar</p>
+        		</div>
+        	</div>
+        </div>
 	</header>
+	<div id="toggle-menu" class="icon-menu toggle-menu"></div>
+	<nav class="main-nav main-container" id="nav">
+		<!--Menu-->
+		<ul class="main-menu">
+			<li class="main-menu__item"><a href="index.html" class="main-menu__link">Inicio</a></li>
+			<li class="main-menu__item"><a href="autos.html" class="main-menu__link">Autos</a></li>
+			<li class="main-menu__item"><a href="contactanos.html" class="main-menu__link">Estoy interesado</a></li>
+			<li class="main-menu__item"><a href="mapa.html" class="main-menu__link">Ubicanos</a></li>
+		</ul>
+
+		<!--Redes sociales-->
+		<div class="social-networks">
+		    <a class='icon-facebook' href="https://facebook.com"></a>
+		    <a class='icon-twitter' href="https://twitter.com"></a>
+		    <a class='icon-youtube' href="https://youtube.com"></a>
+		    <a class='icon-linkedin' href="https://linkedin.com"></a>
+		</div>
+	</nav>
+	<!--Banner-->
+	<div class="main-banner">
+	    <div class="main-container main-banner__data-container">
+		      <!--Datos-->
+		    <div class="main-banner__data">
+		        <!--Titulo-->
+		        <h2 class="main-banner__title">Volkswagen</h2>
+		        <!--Subtitulo-->
+		        <p class="main-banner__subtitle">Das auto</p>
+		        <!--Descripcion-->
+		        <p class="main-banner__description">Volkswagen vendemos carros, camionetas, autos deportivos y mas cosas, todo esta shido 10 de 10 mi yoryi </p>
+		        <!--Botones-->
+		        <a href="#" class="main-banner__button button button--light">Autos</a>
+		        <a href="" class="main-banner__button button button--cta">Citar</a>
+		    </div>
+	    </div>
+  	</div>
 	<main class="main">
 		<section class="section1_nuevos_modelos">
 			<div>
