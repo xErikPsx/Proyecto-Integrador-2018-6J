@@ -3,19 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>gol</title>
+	<link rel="stylesheet" href="../source/CSS/styles.css">
+	<link href="https://file.myfontastic.com/Ju4tYXsA6McXvVP5ZJsxNi/icons.css" rel="stylesheet">
 </head>
 <body>
-	<header>			<!--esta es la imagen del header, pero la quito pporque caga todo alv, esta muy grande-->
-		<!--<img src="https://fortunedotcom.files.wordpress.com/2016/04/489943546.jpg">-->
-		<nav>
-			<ul>
-				<li class="menu_item_prin"><a href="index.html" class="menu_link_princ"><img src="img/home/menu/Logo_Volkswagen.png" alt="Inicio"></a></li>
-				<li class="menu_item_prin"><a href="autos.html" class="menu_link_princ">Autos</a></li>
-				<li class="menu_item_prin"><a href="contactanos.html" class="menu_link_princ">Estoy interesado</a></li>
-				<li class="menu_item_prin"><a href="mapa.html" class="menu_link_princ">Ubicanos</a></li>
-			</ul>
-		</nav>
+	<!--header///////////////////////////////////-->
+	<header class="main-header main-container">			
+		<div class="main-header-1">
+			<img src="img/home/menu/Logo_Volkswagen.png" class="logo">
+		</div>
+		<div class="main-header-2">
+	      	<!--Widget de llamada///////////////////////////////////-->
+	    	<div class="contact-widget">
+		        <!--Icono///////////////////////////////////-->
+		        <div class="contact-widget__icon icon-call button button--dark button--square"></div>
+		        <!--Datos///////////////////////////////////-->
+		        <div class="contact-widget__data">
+		          <h3 class="contact-widget__title">Contactanos</h3>
+		          <p class="contact-widget__content">000-111-222</p>
+		        </div>
+	    	</div>
+	      	<!--Widget de direccion///////////////////////////////////-->
+      		<div class="contact-widget">
+          		<!--Icono///////////////////////////////////-->
+        		<div class="contact-widget__icon icon-location button button--dark button--square"></div>
+        		<!--Datos///////////////////////////////////-->
+        		<div class="contact-widget__data">
+          			<h3 class="contact-widget__title">Nuestra localizacion</h3>
+          			<p class="contact-widget__content">Colima por ahi en algun lugar</p>
+        		</div>
+        	</div>
+        </div>
 	</header>
+
+	<nav class="main-nav main-container" id="nav">
+		<!--Menu///////////////////////////////////7-->
+		<ul class="main-menu">
+			<a href="index.html" class="main-menu__link">Inicio</a>
+			<a href="autos.html" class="main-menu__link">Autos</a>
+			<a href="contactanos.html" class="main-menu__link">Estoy interesado</a>
+			<a href="mapa.html" class="main-menu__link">Ubicanos</a>
+		</ul>
+
+		<!--Redes sociales///////////////////////////////////-->
+		<div class="social-networks">
+		    <a class='icon-facebook' href="https://facebook.com"></a>
+		    <a class='icon-twitter' href="https://twitter.com"></a>
+		    <a class='icon-youtube' href="https://youtube.com"></a>
+		    <a class='icon-linkedin' href="https://linkedin.com"></a>
+		</div>
+	</nav>
 	
 	<main>
 		<div class="portada">
@@ -104,44 +141,19 @@
 
 	</main>
 
-	<footer> <!--aqui meti estilo porque me deseperaba que se viera todo muy grande-->
-		<div class="footer_redes_sociales">
-			<div class="footer_vw_div_facebook" style="height:38px; width: 38px">
-				<a class="footer_vw_facebook" href="https://web.facebook.com/VolkswagenMX/" target="_blank">
-					<svg id="fab2295b-488f-453d-8c44-efc6c166cf4d" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.3 62.3" class="vw_m520_social_icon"><title>Facebook</title><g id="4eeaf365-2990-41ae-914f-635d405f5404" data-name="Ebene 1-2"><path d="M57.7.9H4.4A3.35,3.35,0,0,0,1,4.2H1V57.6a3.33,3.33,0,0,0,3.3,3.3H33v-23H25.2V28.8H33V22.1c0-7.8,4.8-12,11.7-12,3.3,0,6.2.2,7,.3v8.1H46.9c-3.8,0-4.5,1.8-4.5,4.4v5.8h9l-1.2,9.1H42.4V60.9H57.7A3.24,3.24,0,0,0,61,57.72V4.2A3.27,3.27,0,0,0,57.76.9Z" fill="#3d5a98"></path></g></svg>
-					<span class="vw_m520_hide">Facebook</span>
-				</a>
-			</div>
-
-			<div class="footer_vw_div_twitter" style="height:38px; width: 38px">
-				<a class="vw_m520_links_url " href="https://twitter.com/Volkswagen_MX" target="_blank">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60.9 50.5" style="enable-background:new 0 0 60.9 50.5;" xml:space="preserve" class="vw_m520_social_icon">
-						<style type="text/css">.st0{fill:#1DA1F2;}</style>
-						<g id="Ebene_2"></g>
-						<g id="Ebene_3">
-						<path class="st0" d="M19.3,49.7c22.6,0,35-18.8,35-35c0-0.5,0-1.1,0-1.6c2.4-1.7,4.5-3.9,6.1-6.4c-2.2,1-4.6,1.6-7.1,1.9c2.6-1.5,4.5-4,5.4-6.8c-2.4,1.4-5.1,2.4-7.8,3c-4.7-5-12.5-5.2-17.4-0.5C30.4,7.3,29,11.8,30,16c-9.9-0.5-19.1-5.2-25.4-12.9C1.4,8.8,3,16,8.4,19.6c-2-0.1-3.9-0.6-5.6-1.5c0,0.1,0,0.1,0,0.2c0,5.9,4.1,10.9,9.9,12.1c-1.8,0.5-3.7,0.6-5.6,0.2c1.6,5,6.2,8.4,11.5,8.5c-4.4,3.4-9.7,5.3-15.3,5.3c-1,0-2-0.1-2.9-0.2C6.1,47.8,12.6,49.7,19.3,49.7"></path>
-						</g>
-					</svg>
-					<span class="vw_m520_hide">Twitter</span>
-				</a>
-			</div>
-
-			<div class="footer_vw_div_youtube" style="height:38px; width: 38px">
-				<a class="vw_m520_links_url " href="https://www.youtube.com/user/VolkswagenMx" target="_blank">
-					<svg id="4d883422-2633-4fbc-a98e-5fcfd79694e7" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.9 43.2" class="vw_m520_social_icon"><defs><linearGradient id="683691be-bbf7-4f05-830d-9683014de53d" x1="30.9" y1="798.4" x2="30.9" y2="840.6" gradientTransform="translate(-0.5 -798)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e52d27"></stop><stop offset="1" stop-color="#bf171d"></stop></linearGradient></defs><title>Youtube</title><g id="2e5d98c7-5a0b-4519-a324-1781501db403" data-name="Ebene 3"><path id="dd12da2a-0217-4d6b-9fca-36a99df72431" data-name="The Sharpness" d="M24.2,12.4l14.2,9.5,2-1Z" fill="#420000" opacity="0.12" style="isolation:isolate"></path><g id="447c002d-d592-454f-bbfd-d80245744a32" data-name="Lozenge"><path d="M59.8,9.5s-.6-4.1-2.4-6a8.24,8.24,0,0,0-6-2.5C43,.4,30.4.4,30.4.4h0S17.8.4,9.4,1a8.69,8.69,0,0,0-6,2.5C1.6,5.4,1,9.5,1,9.5a91.79,91.79,0,0,0-.6,9.7v4.6A89.32,89.32,0,0,0,1,33.5s.6,4.1,2.4,6c2.3,2.4,5.3,2.3,6.6,2.6,4.8.5,20.4.6,20.4.6s12.6,0,21-.6a8.69,8.69,0,0,0,6-2.5c1.8-1.8,2.4-6,2.4-6a91.79,91.79,0,0,0,.6-9.7V19.3A92.41,92.41,0,0,0,59.8,9.5ZM24.2,29.3V12.4l16.2,8.5Z" fill="url(#683691be-bbf7-4f05-830d-9683014de53d)"></path></g></g></svg>
-					<span class="vw_m520_hide">YouTube</span>
-				</a>
-			</div>
-		</div>		
-
-		<div class="footer_vw_info">
-			<p>		
-				** VOLKSWAGEN DE MÉXICO S.A. DE C.V. Y SUS FILIALES ALERTAN A LOS CONSUMIDORES PARA QUE EVITEN SER VÍCTIMAS DE FRAUDES COMETIDOS POR PERSONAS AJENAS A LA EMPRESA CON LA SUPUESTA VENTA DE VEHÍCULOS EN REMATE Y/O LIQUIDACIÓN A TRAVÉS DE LA PÁGINA HTTPS://WWW.VW-PUEBLA.COM/, WWW.VW-PUEBLA.COM O WWW.VOLKSWAGENMEXICO.COM.MX VOLKSWAGEN DE MÉXICO S.A. DE C.V. NO ASUME RESPONSABILIDAD ALGUNA POR LA COMPRAVENTA QUE SE REALICE DE VEHÍCULOS U OTROS PRODUCTOS SIN SU DEBIDA REPRESENTACIÓN Y AUTORIZACIÓN. LA EMPRESA HA DENUNCIADO LA VENTA FRAUDULENTA ANTE LAS AUTORIDADES CORRESPONDIENTES. *La información y/o imágenes aquí contenidas pueden no corresponder con total precisión (incluyendo precios de contado y, equipamiento, disponibilidad y demás aplicables) a la de los vehículos ofertados por las distribuidoras Volkswagen, por lo que le recomendamos visitar su distribuidor Volkswagen más cercano. Los valores obtenidos sobre rendimientos en ciudad, carretera y combinado son valores obtenidos en pruebas de laboratorio bajo condiciones controladas. a) El precio aquí indicado es una estimación para operaciones de contado en Moneda Nacional de los Estados Unidos Mexicanos, que incluye el Impuesto al Valor Agregado (IVA) y el Impuesto Sobre Autos Nuevos (ISAN cuando aplique). Los impuestos pueden cambiar conforme a la normativa aplicable vigente. b) Precios de contado vigentes al 31 de Marzo de 2018 para la República Mexicana. Todas las imágenes son de carácter ilustrativo.
+	<footer class="main-footer"> <!--aqui meti estilo porque me deseperaba que se viera todo muy grande-->
+		<div class="footer_vw_info main-conteiner main-footer__inner">
+			<p>	© Volkswagen 2018</p>
+			<p>	Nuestras redes sociales</p>
+			<p> 
+				<div class="social-networks">
+			    <a class='icon-facebook' href="https://facebook.com"></a>
+			    <a class='icon-twitter' href="https://twitter.com"></a>
+			    <a class='icon-youtube' href="https://youtube.com"></a>
+			    <a class='icon-linkedin' href="https://linkedin.com"></a>
 			</p>
 		</div>
-
-		<div class="footer_vw_da">
-			© Volkswagen 2018
+			
 		</div>
 	</footer>
 </body>
